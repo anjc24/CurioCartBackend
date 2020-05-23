@@ -4,7 +4,11 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "build": "cd front && npm start",
+    "install-client": "cd front && npm install",
+    "heroku-postbuild":"npm run install-client && npm run build",
     "start": "nodemon app.js"
+    
   },
   "keywords": [],
   "author": "",
